@@ -1,0 +1,134 @@
+/* File Name: style.css
+Student Name: Ninghua Zhang
+Student ID: 301230968
+Date: 09/29/2022 */
+
+/* Universal CSS settings for header and footer */
+
+footer {
+  position: relative;
+  background: #000;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 70px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+
+footer .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 15px 40px 10px 40px;
+}
+
+footer .content .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .content .top .logo-details {
+  color: #fff;
+  font-size: 18px;
+}
+
+footer .content .top .media-icons {
+  display: flex;
+}
+
+footer .content .top .media-icons a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+footer .top .media-icons a:nth-child(1) {
+  background: #4267B2;
+}
+
+footer .top .media-icons a:nth-child(1):hover {
+  color: #4267B2;
+  background: #fff;
+}
+
+footer .top .media-icons a:nth-child(2) {
+  background: #1DA1F2;
+}
+
+footer .top .media-icons a:nth-child(2):hover {
+  color: #1DA1F2;
+  background: #fff;
+}
+
+footer .top .media-icons a:nth-child(3) {
+  background: #E1306C;
+}
+
+footer .top .media-icons a:nth-child(3):hover {
+  color: #E1306C;
+  background: #fff;
+}
+
+footer .top .media-icons a:nth-child(4) {
+  background: #0077B5;
+}
+
+footer .top .media-icons a:nth-child(4):hover {
+  color: #0077B5;
+  background: #fff;
+}
+
+footer .top .media-icons a:nth-child(5) {
+  background: #FF0000;
+}
+
+footer .top .media-icons a:nth-child(5):hover {
+  color: #FF0000;
+  background: #fff;
+}
+
+footer .bottom-details {
+  width: 100%;
+  background: #000;
+}
+
+footer .bottom-details .bottom_text {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .bottom-details .bottom_text span,
+footer .bottom-details .bottom_text a {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+footer .bottom-details .bottom_text a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+footer .bottom-details .bottom_text a {
+  margin-right: 10px;
+}

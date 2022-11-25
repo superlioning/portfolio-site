@@ -1,0 +1,49 @@
+/* File Name: about_me.css
+Student Name: Ninghua Zhang
+Student ID: 301230968
+Date: 09/29/2022 */
+
+/* Setting for top image content */
+
+.headerImgContainer {
+    background: url('/Assets/images/about_me_header_image.png') no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.headerImage {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.headerImage .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+}
+
+.headerImage .sub_title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+}
+
+.personalImg {
+    object-fit: cover;
+}
+
+@media (min-width: 992px) {
+    .rounded-lg-3 {
+        border-radius: .3rem;
+    }
+}
+

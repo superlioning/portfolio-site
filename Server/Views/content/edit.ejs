@@ -1,0 +1,60 @@
+<div class="container mt-5 p-4 pb-4 align-items-center rounded-4 border shadow-lg">
+    <h1 class="col-lg-6 col-md-10 col-sm-10"><%= title %> Contact</h1>
+    <hr>
+    <div id="messageArea"></div>
+
+    <div class="row justify-content-lg-center g-3">
+      <form method="POST" class="col-lg-6 col-md-10 col-sm-10">
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">First Name</span>
+          <input id="firstName" name="firstName" type="text" class="form-control" 
+          value="<%= contact.First_name %>"
+          aria-label="First Name" aria-describedby="First Name Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text">Last Name</span>
+            <input id="lastName" name="lastName" type="text" class="form-control" 
+            value="<%= contact.Last_name %>"
+            aria-label="Last Name" aria-describedby="Last Name Input" required>
+          </div>
+
+        <div class="input-group mb-3">
+        <span class="input-group-text">Contact Number</span>
+        <input id="contactNumber" name="contactNumber" type="text" class="form-control" 
+        value="<%= contact.Contact_number %>"
+        aria-label="Contact Number" aria-describedby="Contact Number Input" required>
+        </div>
+
+        <div class="input-group mb-3">
+        <span class="input-group-text">Email Address</span>
+        <input id="emailAddress" name="emailAddress" type="text" class="form-control" 
+        value="<%= contact.Email_address %>"
+        aria-label="Email Address" aria-describedby="Email Address Input" required>
+        </div>
+        
+        <div class="form-row row form-group mt-4">
+        <% if(title == "Edit") { %>
+
+          <div class="form-group col-md-6 text-start">
+            <td class="text-center"><a href="/delete/<%= id %>" class="btn btn-danger delete"><i
+                class="fa-solid fa-trash-can fa-lg"></i> Delete</a></td>
+          </div>
+
+          <div class="form-group col-md-6 text-end">
+            <button id="editButton" type="submit" class="btn btn-primary"><i class="fas fa-edit fa-lg"></i> Edit</button>           
+        <% } else {%>
+
+          <div class="form-group text-end">
+            <button id="addButton" type="submit" class="btn btn-primary"><i class="fas fa-plus-circle fa-lg"></i> Add</button>
+        <% } %>  
+
+            <a href="/contact-list" id="cancelButton" type="button" class="btn btn-warning"><i class="fas fa-undo fa-lg"></i> Cancel</a>
+          </div>
+        </div>
+      </form>
+
+    </div>
+</div>
+

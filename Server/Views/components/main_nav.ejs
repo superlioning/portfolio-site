@@ -1,0 +1,85 @@
+<!--Main Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand px-4" href="/">
+      <img src="/Assets/images/logo.png" alt="Logo" width="27" height="27" class="d-inline-block align-text-top">
+      Personal Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item pe-1">
+          <% if (title == "Home") { %>
+          <a class="nav-link active" aria-current="page" href="/home">
+          <% } else { %>
+          <a class="nav-link" href="/home">
+          <% } %>
+          <i class="fa-solid fa-lg fa-house-user"></i> Home</a>
+        </li>
+
+        <li class="nav-item px-1">
+          <% if (title == "About Me") { %>
+          <a class="nav-link active" aria-current="page" href="/about_me">
+          <% } else { %>
+          <a class="nav-link" href="/about_me">
+          <% } %>
+          <i class="fa-solid fa-lg fa-user"></i> About Me</a>
+        </li>
+
+        <li class="nav-item px-1">
+          <% if (title == "Projects") { %>
+          <a class="nav-link active" aria-current="page" href="/projects">
+          <% } else { %>
+          <a class="nav-link" href="/projects">
+          <% } %>
+          <i class="fa-solid fa-lg fa-sheet-plastic"></i> Projects</a>
+        </li>
+
+        <li class="nav-item px-1">
+          <% if (title == "Services") { %>
+          <a class="nav-link active" aria-current="page" href="/services">
+          <% } else { %>
+          <a class="nav-link" href="/services">
+          <% } %>
+          <i class="fa-solid fa-lg fa-laptop-file"></i> Services</a>
+        </li>
+
+        <li class="nav-item px-1">
+          <% if (title == "Contact") { %>
+          <a class="nav-link active" aria-current="page" href="/contact">
+          <% } else { %>
+          <a class="nav-link" href="/contact">
+          <% } %>
+          <i class="fa-solid fa-lg fa-envelope"></i> Contact</a>
+        </li>
+
+        <% if(displayName) { %>
+          <li class="nav-item px-1">
+            <a class="nav-link <%= (page == 'contact-list') ? 'active' : ''; %>" aria-current="page" href="/contact-list"><i class="fa-solid fa-address-book fa-lg"></i> Contact List</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link" aria-current="page" href="/logout"><i class="fa-solid fa-right-from-bracket fa-lg"></i>
+              Logout</a>
+          </li>
+          <% } else { %>
+            <li class="nav-item px-1">
+              <a class="nav-link <%= (page == 'login') ? 'active' : ''; %>" aria-current="page" href="/login"><i
+                  class="fa-solid fa-right-to-bracket fa-lg"></i> Login</a>
+            </li>
+          <% } %>
+
+        <li class="nav-item">
+          <a class="nav-link disabled"><%= displayName %></a>
+        </li>
+      </ul>
+      <form class="d-flex pe-1" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-lg fa-magnifying-glass"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>

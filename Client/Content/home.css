@@ -1,0 +1,91 @@
+/* File Name: home.css
+Student Name: Ninghua Zhang
+Student ID: 301230968
+Date: 09/29/2022 */
+
+/* CSS settings for home page */
+
+#headerImage img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+}
+
+.center .sub_title {
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+}
+
+.center .headerButtons {
+    margin-top: 20px;
+}
+
+.center .headerButtons button {
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.center .headerButtons button:first-child {
+    color: #fff;
+    background: none;
+}
+
+.headerButtons button:first-child:hover {
+    background: #fff;
+    color: #1b1b1b;
+}
+
+.center .headerButtons button:last-child {
+    color: #fff;
+    background: none;
+}
+
+.headerButtons button:last-child:hover {
+    background: #fff;
+    color: #1b1b1b;
+}
+
+#introduction {
+    position: absolute;
+    top: 126%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    font-size: 1.4em;
+    color: #fff;
+}
+
+.colored {
+    color: #0096c7;
+}

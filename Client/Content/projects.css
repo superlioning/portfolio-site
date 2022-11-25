@@ -1,0 +1,139 @@
+/* File Name: project.css
+Student Name: Ninghua Zhang
+Student ID: 301230968
+Date: 09/29/2022 */
+
+/* Setting for top image content */
+
+.banner {
+    background: transparent url("/Assets/images/projects_header_image.png") 0 0 no-repeat fixed;
+    text-align: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: table;
+}
+
+.banner-head {
+    display: table-cell;
+    vertical-align: middle;
+    margin-bottom: 0;
+    font-size: 49px;
+    color: white;
+    font-weight: 600;
+    text-shadow: 0 1px 1px black;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.grey {
+    background: #F5F5F5;
+}
+
+.white {
+    background: #FFF;
+}
+
+.white h1 {
+    text-align: right;
+}
+
+.white p {
+    text-align: justify;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+header>div {
+    margin: 0 15px;
+}
+
+header .text {
+    flex: 1;
+}
+
+header .header-img {
+    min-width: 0;
+}
+
+header .header-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 430px;
+    height: 200px;
+}
+
+.text h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.text p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 1.1em;
+}
+
+@media (max-width: 1000px) {
+    header {
+        width: auto;
+    }
+
+    .section {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    .header-img {
+        text-align: center;
+    }
+
+    .white {
+        background: #F5F5F5;
+    }
+
+    .white h1 {
+        text-align: center;
+    }
+
+    .white p {
+        text-align: justify;
+        padding-bottom: 20px;
+    }
+
+    .grey h1 {
+        text-align: center;
+    }
+
+    header {
+        display: block;
+        margin: 10px;
+        height: auto;
+    }
+
+    header>div {
+        margin: 0;
+    }
+
+    header .text {
+        width: 100%;
+        height: auto;
+    }
+}
